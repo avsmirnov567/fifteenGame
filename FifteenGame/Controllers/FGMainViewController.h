@@ -10,6 +10,8 @@
 
 @interface FGMainViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
 -(NSString *)printModel;
-
+-(void)checkForFinish;
 @end

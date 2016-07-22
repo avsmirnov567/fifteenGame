@@ -17,6 +17,7 @@
 		490D85521D3DDCE200B7DEB4 /* FGGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 490D85511D3DDCE200B7DEB4 /* FGGameModel.m */; };
 		4981BD7C1D3ED0DF00F2ED3B /* FGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4981BD7B1D3ED0DF00F2ED3B /* FGMainViewController.m */; };
 		4981BD801D3ED8CD00F2ED3B /* FGFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4981BD7F1D3ED8CD00F2ED3B /* FGFieldView.m */; };
+		49847A061D421CE900B595FC /* FGResetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49847A051D421CE900B595FC /* FGResetButton.m */; };
 		4985B84A1D3EF4CE00AF9530 /* FGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985B8491D3EF4CE00AF9530 /* FGButton.m */; };
 		498ADB801D4096420099C4F8 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 498ADB7F1D4096420099C4F8 /* back.jpg */; };
 		498ADB821D4099D80099C4F8 /* but.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 498ADB811D4099D80099C4F8 /* but.jpg */; };
@@ -41,6 +42,8 @@
 		4981BD7B1D3ED0DF00F2ED3B /* FGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGMainViewController.m; path = Controllers/FGMainViewController.m; sourceTree = "<group>"; };
 		4981BD7E1D3ED8CD00F2ED3B /* FGFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFieldView.h; path = "View classes/FGFieldView.h"; sourceTree = "<group>"; };
 		4981BD7F1D3ED8CD00F2ED3B /* FGFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFieldView.m; path = "View classes/FGFieldView.m"; sourceTree = "<group>"; };
+		49847A041D421CE900B595FC /* FGResetButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGResetButton.h; path = "View classes/FGResetButton.h"; sourceTree = "<group>"; };
+		49847A051D421CE900B595FC /* FGResetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGResetButton.m; path = "View classes/FGResetButton.m"; sourceTree = "<group>"; };
 		4985B8481D3EF4CE00AF9530 /* FGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGButton.h; path = "View classes/FGButton.h"; sourceTree = "<group>"; };
 		4985B8491D3EF4CE00AF9530 /* FGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGButton.m; path = "View classes/FGButton.m"; sourceTree = "<group>"; };
 		498ADB7F1D4096420099C4F8 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back.jpg; path = ../../../../Downloads/back.jpg; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				4981BD7F1D3ED8CD00F2ED3B /* FGFieldView.m */,
 				4985B8481D3EF4CE00AF9530 /* FGButton.h */,
 				4985B8491D3EF4CE00AF9530 /* FGButton.m */,
+				49847A041D421CE900B595FC /* FGResetButton.h */,
+				49847A051D421CE900B595FC /* FGResetButton.m */,
 			);
 			name = "View classes";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				4981BD7C1D3ED0DF00F2ED3B /* FGMainViewController.m in Sources */,
 				490D853C1D3DCFCF00B7DEB4 /* ViewController.m in Sources */,
 				490D85391D3DCFCF00B7DEB4 /* AppDelegate.m in Sources */,
+				49847A061D421CE900B595FC /* FGResetButton.m in Sources */,
 				4985B84A1D3EF4CE00AF9530 /* FGButton.m in Sources */,
 				490D85361D3DCFCF00B7DEB4 /* main.m in Sources */,
 			);

@@ -8,6 +8,8 @@
 
 #import "FGButton.h"
 #import "FGFieldView.h"
+#import "CoreGraphics/CoreGraphics.h"
+
 
 @implementation FGButton
 
@@ -39,11 +41,7 @@
 
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:rect.size.height/32];
-    if([self isClickable]){
-        [[UIColor greenColor]setFill];
-    }else{
-        [[UIColor yellowColor] setFill];
-    }
+    [[UIColor yellowColor] setFill];
     [path fill];
 }
 
@@ -86,6 +84,7 @@
         self.frame = frame;
     }];
     [self.field setNeedsDisplay];
+    [self.field checkForFinish];
 }
 
 -(void)moveDown{
@@ -100,6 +99,8 @@
         self.frame = frame;
     }];
     [self.field setNeedsDisplay];
+    [self.field checkForFinish];
+
 }
 
 -(void)moveLeft{
@@ -114,6 +115,8 @@
         self.frame = frame;
     }];
     [self.field setNeedsDisplay];
+    [self.field checkForFinish];
+
 }
 
 -(void)moveRight{
@@ -128,5 +131,7 @@
         self.frame = frame;
     }];
     [self.field setNeedsDisplay];
+    [self.field checkForFinish];
+
 }
 @end

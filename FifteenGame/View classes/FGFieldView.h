@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "FGGameModel.h"
+#import "FGMainViewController.h"
 
 @interface FGFieldView : UIView
 
 @property (nonatomic, strong) FGGameModel *model;
 
--(void)initModelWithStartPosition;
+-(void)initModelWithStartPositionAndController:(FGMainViewController *)controller;
 -(void)drawFieldFromModel;
 -(void)makeButtonsClickable;
 -(void)clearButtonsClickability;
+-(void)checkForFinish;
+-(void)clearField;
 
 @end

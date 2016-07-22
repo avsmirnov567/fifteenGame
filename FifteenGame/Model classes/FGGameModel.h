@@ -15,6 +15,7 @@
 @property (nonatomic) NSInteger voidY;
 
 -(instancetype)initWithValidPosition: (NSMutableArray *)validPosition;
+-(void)clearModel;
 -(void)makeStartPosition;
 
 -(void)moveVoidUp;

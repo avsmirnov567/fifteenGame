@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uKt-3a-ugE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AVv-9m-weM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -125,12 +125,9 @@
                                     <constraint firstAttribute="width" constant="70" id="xyX-11-yn9"/>
                                 </constraints>
                                 <state key="normal" title="GONEXT"/>
-                                <connections>
-                                    <segue destination="AVv-9m-weM" kind="show" id="tHT-cW-K1q"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGq-m1-0a0">
-                                <rect key="frame" x="28" y="164" width="42" height="21"/>
+                                <rect key="frame" x="28" y="120" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -169,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="489"/>
+            <point key="canvasLocation" x="1162" y="451"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="eMP-UI-Y8u">
@@ -184,59 +181,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jw5-3f-B4q" customClass="FGFieldView">
-                                <rect key="frame" x="16" y="64" width="288" height="288"/>
+                                <rect key="frame" x="16" y="140" width="288" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jw5-3f-B4q" secondAttribute="height" multiplier="1:1" id="mMu-N3-Olo"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fieldColor">
-                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgH-p1-RH2">
-                                <rect key="frame" x="16" y="360" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to order..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf2-Tm-zd0">
+                                <rect key="frame" x="85" y="99" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="c9F-Yl-EB1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcS-iq-O4I" customClass="FGResetButton">
+                                <rect key="frame" x="110" y="448" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="73Y-64-Yes"/>
+                                    <constraint firstAttribute="width" constant="100" id="AAb-mw-Da1"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="btnResetClicked:" destination="AVv-9m-weM" eventType="touchUpInside" id="4mS-rm-MdY"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="jw5-3f-B4q" firstAttribute="top" secondItem="AkA-DW-rrV" secondAttribute="bottom" id="0e2-fk-30T"/>
+                            <constraint firstItem="jw5-3f-B4q" firstAttribute="top" secondItem="Bf2-Tm-zd0" secondAttribute="bottom" constant="20" id="2F4-9c-1ZZ"/>
+                            <constraint firstItem="TcS-iq-O4I" firstAttribute="top" secondItem="jw5-3f-B4q" secondAttribute="bottom" constant="20" id="VKp-Fx-eka"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jw5-3f-B4q" secondAttribute="trailing" id="WtU-xw-7cp"/>
+                            <constraint firstItem="jw5-3f-B4q" firstAttribute="centerX" secondItem="UPJ-wd-5ed" secondAttribute="centerX" id="fiK-za-Uck"/>
                             <constraint firstItem="jw5-3f-B4q" firstAttribute="leading" secondItem="UPJ-wd-5ed" secondAttribute="leadingMargin" id="jT2-g4-xih"/>
-                            <constraint firstItem="UgH-p1-RH2" firstAttribute="top" secondItem="jw5-3f-B4q" secondAttribute="bottom" constant="9" id="uff-4R-q01"/>
-                            <constraint firstItem="jw5-3f-B4q" firstAttribute="centerX" secondItem="UPJ-wd-5ed" secondAttribute="centerX" id="w8j-HH-eTj"/>
-                            <constraint firstItem="UgH-p1-RH2" firstAttribute="leading" secondItem="UPJ-wd-5ed" secondAttribute="leadingMargin" constant="8" id="yfz-Rq-Vp4"/>
+                            <constraint firstItem="Bf2-Tm-zd0" firstAttribute="centerX" secondItem="UPJ-wd-5ed" secondAttribute="centerX" id="kkA-VD-sed"/>
+                            <constraint firstItem="TcS-iq-O4I" firstAttribute="centerX" secondItem="UPJ-wd-5ed" secondAttribute="centerX" id="o6p-TW-DXE"/>
+                            <constraint firstItem="jw5-3f-B4q" firstAttribute="centerY" secondItem="UPJ-wd-5ed" secondAttribute="centerY" id="ywx-Cs-QAs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="M1f-Jh-edQ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="fieldView" destination="jw5-3f-B4q" id="Rce-Ze-HYQ"/>
-                        <outlet property="lbl" destination="UgH-p1-RH2" id="EIs-Kz-HgD"/>
+                        <outlet property="resetButton" destination="TcS-iq-O4I" id="3AG-kS-xRd"/>
+                        <outlet property="topLabel" destination="Bf2-Tm-zd0" id="xGa-ti-nyY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocw-LX-Tui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="1249"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="zEg-59-2VI">
-            <objects>
-                <navigationController id="uKt-3a-ugE" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b9B-iX-x3s">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dlJ-dM-DnX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yku-1n-CaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="251" y="489"/>
+            <point key="canvasLocation" x="442" y="397"/>
         </scene>
     </scenes>
 </document>

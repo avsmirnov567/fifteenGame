@@ -11,6 +11,10 @@
 
 @implementation FGGameModel
 
+-(void)clearModel{
+    [self.field removeAllObjects];
+}
+
 -(instancetype)initWithValidPosition:(NSMutableArray *)validPosition{
     self.field = [NSMutableArray new];
     self.field = validPosition;
@@ -21,7 +25,7 @@
 
 -(void)makeStartPosition{
     NSInteger direction;
-    NSInteger times = kSide*20; //число перестановок
+    NSInteger times = 10; //число перестановок
     
     for (int i=0; i<times; i++){
         direction = arc4random() % 4;
